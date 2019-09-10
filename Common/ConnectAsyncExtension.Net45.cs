@@ -34,11 +34,17 @@ namespace SuperSocket.ClientEngine
                     return;
                 }
 
-                socket.ConnectAsync(e);
+                if (!socket.ConnectAsync(e))
+                {
+                    callback(socket, state, e, null);
+                }
             }
             else
             {
-                Socket.ConnectAsync(SocketType.Stream, ProtocolType.Tcp, e);
+                if (!Socket.ConnectAsync(SocketType.Stream, ProtocolType.Tcp, e))
+                {
+                    callback(e.ConnectSocket, state, e, null);
+                }
             }            
 #else
             var socket = PreferIPv4Stack()
@@ -59,7 +65,10 @@ namespace SuperSocket.ClientEngine
                 }
             }
                 
-            socket.ConnectAsync(e);
+            if (!socket.ConnectAsync(e))
+            {
+                callback(socket, state, e, null);
+            }
 #endif
         }
     }
