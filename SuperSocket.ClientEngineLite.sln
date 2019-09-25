@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperSocket.ClientEngineLite", "SuperSocket.ClientEngineLite.csproj", "{8907ACDC-0039-4F8E-820D-B088E9A2F4EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8907ACDC-0039-4F8E-820D-B088E9A2F4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8907ACDC-0039-4F8E-820D-B088E9A2F4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8907ACDC-0039-4F8E-820D-B088E9A2F4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8907ACDC-0039-4F8E-820D-B088E9A2F4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E14FBD3B-3E4A-4384-AFC4-ED7924FADE8A}
+	EndGlobalSection
+EndGlobal
